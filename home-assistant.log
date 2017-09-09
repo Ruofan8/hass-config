@@ -1,0 +1,197 @@
+2017-09-08 21:59:49 WARNING (MainThread) [homeassistant.components.updater] Running on 'dev', only analytics will be submitted
+2017-09-08 22:11:09 WARNING (Thread-44) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-08 22:11:10 WARNING (Thread-43) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-08 22:11:39 ERROR (Thread-44) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-09-08 22:11:40 ERROR (Thread-43) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-09-09 00:25:40 ERROR (MainThread) [homeassistant.core] Timer got out of sync. Resetting
+2017-09-09 00:25:40 WARNING (Thread-41) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 00:25:40 ERROR (Thread-41) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-09-09 00:25:40 ERROR (Thread-10) [homeassistant.components.light.hue] Cannot reach the bridge
+Traceback (most recent call last):
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/light/hue.py", line 179, in update_lights
+    api = bridge.get_api()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 838, in get_api
+    return self.request('GET', '/api/' + self.username)
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 651, in request
+    connection.request(mode, address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1083, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 911, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 854, in send
+    self.connect()
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 826, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 711, in create_connection
+    raise err
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 702, in create_connection
+    sock.connect(sa)
+OSError: [Errno 50] Network is down
+2017-09-09 00:25:40 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/asyncio/tasks.py", line 241, in _step
+    result = coro.throw(exc)
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/discovery.py", line 125, in scan_devices
+    results = yield from hass.async_add_job(_discover, netdisco)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/asyncio/futures.py", line 358, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/asyncio/tasks.py", line 290, in _wakeup
+    future.result()
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/asyncio/futures.py", line 274, in result
+    raise self._exception
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/concurrent/futures/thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/discovery.py", line 151, in _discover
+    netdisco.scan()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/netdisco/discovery.py", line 60, in scan
+    self.gdm.scan()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/netdisco/gdm.py", line 21, in scan
+    self.update()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/netdisco/gdm.py", line 76, in update
+    sock.sendto(gdm_msg, (gdm_ip, gdm_port))
+OSError: [Errno 50] Network is down
+2017-09-09 00:25:43 WARNING (Thread-42) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 02:25:45 ERROR (Thread-23) [homeassistant.components.light.hue] Cannot reach the bridge
+Traceback (most recent call last):
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/light/hue.py", line 179, in update_lights
+    api = bridge.get_api()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 838, in get_api
+    return self.request('GET', '/api/' + self.username)
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 651, in request
+    connection.request(mode, address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1083, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 911, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 854, in send
+    self.connect()
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 826, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 711, in create_connection
+    raise err
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 702, in create_connection
+    sock.connect(sa)
+OSError: [Errno 50] Network is down
+2017-09-09 02:25:46 WARNING (Thread-42) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 04:26:30 ERROR (Thread-8) [homeassistant.components.light.hue] Cannot reach the bridge
+Traceback (most recent call last):
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/light/hue.py", line 179, in update_lights
+    api = bridge.get_api()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 838, in get_api
+    return self.request('GET', '/api/' + self.username)
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 651, in request
+    connection.request(mode, address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1083, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 911, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 854, in send
+    self.connect()
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 826, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 711, in create_connection
+    raise err
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 702, in create_connection
+    sock.connect(sa)
+OSError: [Errno 50] Network is down
+2017-09-09 04:26:32 WARNING (Thread-42) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 04:26:33 WARNING (Thread-41) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 06:29:03 WARNING (Thread-41) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 06:29:03 ERROR (Thread-41) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-09-09 06:29:03 WARNING (Thread-42) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 06:29:03 ERROR (Thread-35) [homeassistant.components.light.hue] Cannot reach the bridge
+Traceback (most recent call last):
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/light/hue.py", line 179, in update_lights
+    api = bridge.get_api()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 838, in get_api
+    return self.request('GET', '/api/' + self.username)
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 651, in request
+    connection.request(mode, address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1083, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 911, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 854, in send
+    self.connect()
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 826, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 711, in create_connection
+    raise err
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 702, in create_connection
+    sock.connect(sa)
+OSError: [Errno 50] Network is down
+2017-09-09 06:29:03 ERROR (Thread-42) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-09-09 07:59:49 ERROR (Thread-21) [homeassistant.components.light.hue] Cannot reach the bridge
+Traceback (most recent call last):
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/light/hue.py", line 179, in update_lights
+    api = bridge.get_api()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 838, in get_api
+    return self.request('GET', '/api/' + self.username)
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 651, in request
+    connection.request(mode, address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1083, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 911, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 854, in send
+    self.connect()
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 826, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 711, in create_connection
+    raise err
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 702, in create_connection
+    sock.connect(sa)
+OSError: [Errno 50] Network is down
+2017-09-09 07:59:52 WARNING (Thread-42) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 07:59:52 WARNING (Thread-41) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 09:01:47 ERROR (Thread-45) [homeassistant.components.light.hue] Cannot reach the bridge
+Traceback (most recent call last):
+  File "/Users/ruofanwang/GitHub/hass/homeassistant/components/light/hue.py", line 179, in update_lights
+    api = bridge.get_api()
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 838, in get_api
+    return self.request('GET', '/api/' + self.username)
+  File "/Users/ruofanwang/.homeassistant/deps/lib/python/site-packages/phue.py", line 651, in request
+    connection.request(mode, address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1083, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1128, in _send_request
+    self.endheaders(body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 1079, in endheaders
+    self._send_output(message_body)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 911, in _send_output
+    self.send(msg)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 854, in send
+    self.connect()
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/http/client.py", line 826, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 711, in create_connection
+    raise err
+  File "/usr/local/Cellar/python3/3.5.1/Frameworks/Python.framework/Versions/3.5/lib/python3.5/socket.py", line 702, in create_connection
+    sock.connect(sa)
+OSError: [Errno 50] Network is down
+2017-09-09 09:01:48 WARNING (Thread-41) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 09:01:48 WARNING (Thread-42) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 10:16:32 WARNING (Thread-44) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 10:16:37 WARNING (Thread-43) [pychromecast.socket_client] Heartbeat timeout, resetting connection
+2017-09-09 10:17:02 ERROR (Thread-44) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
+2017-09-09 10:17:07 ERROR (Thread-43) [pychromecast.socket_client] Failed to connect, retrying in 5.0s
